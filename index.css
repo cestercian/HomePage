@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*noinspection CssReplaceWithShorthandSafely*/
+body {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQ5NzYzNDN8&ixlib=rb-4.0.3&q=85");
+}
