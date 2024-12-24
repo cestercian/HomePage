@@ -11,12 +11,6 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         document.getElementById("author").textContent = `By: Dodi Achmad`
     })
 
-/**
- * Challenge: Pull down the cryptocurrency data for dogecoin from the
- * CoinGecko API and log it to the console
- *
- * Also add a .catch() method to console any errors that might occur to the console
- */
 
 fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
     .then(res=>res.json())
