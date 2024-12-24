@@ -47,4 +47,3 @@ navigator.geolocation.getCurrentPosition(position => {
             console.log(data)
         })
 });
-
