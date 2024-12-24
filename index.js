@@ -39,19 +39,12 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
 // setInterval(getCurrentTime, 1000)
 
 
-/**
- * Challenge: Get the user's current weather for their area and
- * log it to the console
- *
- * BaseURL: https://apis.scrimba.com/openweathermap/data/2.5/weather
- * Queries to include:
- *     - lat (latitude)
- *     - lon (longitude)
- *     - units (imperial or metric)
- */
-
 navigator.geolocation.getCurrentPosition(position => {
-    console.log(position)
-
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}`)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('weather').innerHTML="data kyun nhi aa rha hai"
+            console.log(data)
+        })
 });
 
